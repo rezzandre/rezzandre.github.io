@@ -1,0 +1,520 @@
+:root {
+  --pr-cl: #9d9d9d;
+  --sc-cl: rgb(85, 82, 82);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #efefef;
+  /* height: 4000px; */
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--pr-cl);
+  margin-bottom: 40px;
+}
+
+/* Whatsapp Floating */
+
+.float-container {
+  position: fixed;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  right: 1rem;
+  bottom: 4.5em;
+  text-align: center;
+  border-radius: 100%;
+  background-color: rgb(37, 211, 102);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.float-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.float-container .wa-container {
+  position: relative;
+  border-radius: 100%;
+}
+
+.wa-container i {
+  position: absolute;
+  font-size: 30px;
+  left: 11px;
+  top: 10px;
+  color: #fff;
+}
+
+/* Whatsapp Floating End */
+
+/* Go Up Float */
+
+.arrow-float-container {
+  position: fixed;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  right: 1rem;
+  bottom: 1rem;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #243b4a;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.arrow-float-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.arrow-float-container .arrow-container {
+  position: relative;
+  border-radius: 100%;
+}
+
+.arrow-container i {
+  position: absolute;
+  font-size: 30px;
+  left: 14px;
+  top: 10px;
+  color: #fff;
+}
+
+/* Go Up Float End */
+
+/* Navbar */
+
+* {
+  z-index: 2;
+}
+
+.img-banner {
+  z-index: 1;
+}
+
+.navbar {
+  z-index: 3;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  background-color: #243b4a;
+}
+
+.navbar-brand {
+  font-size: 20px;
+}
+
+.navbar-brand span {
+  font-weight: 700;
+  color: #266e2a;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+.nav-link.active {
+  font-weight: 700;
+}
+
+.button-lg-primary {
+  border-radius: 10px;
+}
+/* Navbar End */
+
+/* Banner */
+
+#banner {
+  background: linear-gradient(160deg, var(--pr-cl), #000);
+  height: 100vh;
+  width: 100%;
+}
+
+.img-banner {
+  /* height: 100%; */
+  width: 60%;
+}
+
+.banner-tagline h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 72px;
+}
+
+.banner-tagline p {
+  font-style: 16px;
+  color: #fff;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 30px;
+  width: 90%;
+}
+
+/* Banner End */
+
+/* Values */
+
+#values {
+  padding: 50px 0;
+}
+
+#values h2 {
+  color: var(--sc-cl);
+}
+
+.about-content img {
+  width: 25%;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+.about-content p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.card-layanan {
+  width: 100%;
+  height: 313px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 05);
+  transition: all 0.1s ease-in;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--pr-cl);
+  border-radius: 50%;
+  /* transition: all 0.2s ease-in; */
+}
+.circle-icon img {
+  width: 60px;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+.card-layanan p {
+  color: #000;
+  font-size: 14px;
+  transition: all 0.4s ease-in;
+}
+
+/* Values Hover */
+
+/* .card-layanan:hover {
+  width: 100%;
+  height: 313px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, var(--pr-cl), #000);
+  padding: 40px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 05);
+  transition: all 0.1s ease-in;
+}
+
+.card-layanan:hover .circle-icon {
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+
+.circle-icon:hover img {
+  width: 60px;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+.card-layanan:hover p {
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.4s ease-in;
+} */
+
+/* Values End */
+
+/* Products */
+#product {
+  background-color: #fff;
+}
+
+.product-card {
+  width: 100%;
+  height: 25em;
+  place-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-card .product-img {
+  width: 100%;
+  height: 250px;
+  padding: 15px;
+  background-color: transparent;
+}
+
+.product-card .product-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.product-card p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.product-card button {
+  background-color: var(--pr-cl);
+  border: none;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  border-radius: 20px;
+}
+
+/* Products End */
+
+/* Gallery */
+
+#gallery h2 {
+  color: var(--sc-cl);
+}
+
+.galleries > img {
+  display: flexbox;
+  width: 17em;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Gallery End */
+
+/* Teams */
+
+#teams h2 {
+  color: var(--sc-cl);
+}
+
+.team-card {
+  background: #fff;
+  height: 20rem;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 05);
+}
+
+section .team-card .team-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--pr-cl);
+  transition: all 0.3s ease-in-out;
+}
+
+section .team-card .team-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.team-card .team-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #000;
+  padding: 30px;
+  place-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.team-card .socialmedia-icon i {
+  opacity: 0.5;
+  margin-top: 10px;
+  padding: 10px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.team-card .team-identity {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card .team-identity .name {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.team-card .team-identity .team-position {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Teams Hover */
+
+.team-card:hover {
+  background: linear-gradient(160deg, var(--pr-cl), #000);
+  border-radius: 20px;
+}
+
+.team-card .team-card-content:hover {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 30px;
+  place-items: center;
+}
+
+section .team-card:hover .team-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #000;
+}
+
+.team-card .socialmedia-icon i:hover {
+  cursor: pointer;
+  opacity: 1;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Teams Hover End */
+/* Teams End */
+
+/* Contact Us */
+
+#contact {
+  background: #fff;
+}
+
+#contact .container .row .col {
+  margin-bottom: 20px;
+}
+
+.form {
+  box-shadow: 3px 0 #2e383f;
+}
+
+.form .form-content {
+  margin-right: 20px;
+}
+
+.contact-info div {
+  padding: 0.5em;
+}
+
+.contact-info div a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-info div a i {
+  font-size: 1.5em;
+  width: 30px;
+}
+
+/* Contavt Us End */
+
+/* Footer */
+
+footer {
+  color: var(--sc-cl);
+  background-color: #efefef;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bt-navbar {
+  display: flex;
+  place-content: center;
+  margin-bottom: 2rem;
+}
+
+.bt-navbar a {
+  text-decoration: none;
+  color: var(--sc-cl);
+}
+
+.btnv {
+  flex-direction: column;
+  margin-right: 10px;
+}
+/* Footer End */
+
+/* Responsive */
+/* Mobile */
+
+@media (max-width: 768px) {
+  .img-banner {
+    width: 50%;
+  }
+
+  .contact-info {
+    margin-left: 0;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  /* Whatsapp Float */
+
+  .float-container {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  /* Banner */
+  .img-banner {
+    width: 90%;
+  }
+
+  /* Form */
+  .form {
+    box-shadow: none;
+  }
+
+  .contact-info {
+    margin-top: 2rem;
+  }
+}
