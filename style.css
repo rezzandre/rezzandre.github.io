@@ -505,6 +505,10 @@ footer {
   }
 
   /* Banner */
+#Banner {
+height : 100%;
+}
+
   .img-banner {
     width: 90%;
   }
