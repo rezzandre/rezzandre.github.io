@@ -49,7 +49,7 @@
     </a>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark position-fixed w-100">
+    <nav class="navbar navbar-expand-md navbar-dark position-fixed w-100">
       <div class="container">
         <a class="navbar-brand" href="#"><!--<img src="gallery/logo.png" alt="" width="30" class="" />-->Indo<span>Muria</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,10 +61,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#product">Our Products</a>
+              <a class="nav-link" href="#values">About Us</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#values">About Us</a>
+              <a class="nav-link" href="#product">Our Products</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#contact">Contact Us</a>
@@ -80,13 +80,15 @@
 
     <!-- Banner -->
     <section id="banner">
-      <div class="container h-100">
+      <div class="container position-relative h-100">
         <div class="row h-100">
           <div class="col-md-6 banner-tagline my-auto">
             <h1>The Best Charcoal You Have Ever Find</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae est quisquam adipisci harum id veritatis qui tempora consequuntur, officiis neque?</p>
           </div>
         </div>
+      </div>
+      <div class="container-fluid">
         <img src="gallery/banner.png" alt="" width="900" class="position-absolute end-0 bottom-0 img-banner" />
       </div>
     </section>
@@ -111,7 +113,7 @@
           </div>
         </div>
         <div class="row justify-content-around my-5">
-          <div class="col-md-4 text-center my-3">
+          <div class="col-lg-4 text-center my-3">
             <div class="card-layanan">
               <div class="circle-icon position-relative mx-auto">
                 <img src="gallery/integrity-icon.png" alt="" class="position-absolute start-50 top-50 translate-middle" />
@@ -120,7 +122,7 @@
               <p class="mt-3">We are both a reliable and trustworthy company as we keep our word and treat others with both fairness and respect.</p>
             </div>
           </div>
-          <div class="col-md-4 text-center my-3">
+          <div class="col-lg-4 text-center my-3">
             <div class="card-layanan">
               <div class="circle-icon position-relative mx-auto">
                 <img src="gallery/quality-icon.png" alt="" class="position-absolute start-50 top-50 translate-middle" />
@@ -129,7 +131,7 @@
               <p class="mt-3">Besides selling high quality products, we also provide services that satisfy customers, and deliver results that meet expectations.</p>
             </div>
           </div>
-          <div class="col-md-4 text-center my-3">
+          <div class="col-lg-4 text-center my-3">
             <div class="card-layanan">
               <div class="circle-icon position-relative mx-auto">
                 <img src="gallery/efficiency-icon.png" alt="" class="position-absolute start-50 top-50 translate-middle" />
@@ -159,24 +161,62 @@
           </div>
         </div>
         <div class="row justify-content-evenly my-5">
-          <div class="col-md-5">
-            <div class="product-card my-3">
+          <div class="col-lg-5">
+            <div class="product-card my-3 justify-content-center">
               <div class="product-img">
-                <img src="gallery/product1.jpg" alt="Product 1" />
+                <img src="gallery/1.png" alt="Product 1" />
               </div>
-              <h3>Lorem ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, dolorum.</p>
-              <button>See More</button>
+              <h3>Charcoal Briquettes</h3>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#product2-modal">See More</button>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-lg-5">
             <div class="product-card my-3">
               <div class="product-img">
-                <img src="gallery/product2.jpg" alt="Product 1" />
+                <img src="gallery/sawdust_powder.png" alt="Product 2" />
               </div>
-              <h3>Lorem ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, dolorum.</p>
-              <button>See More</button>
+              <h3>Coconut Shell and Wood Powder</h3>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#product2-modal">See More</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="product1-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Coconut Shell and Wood Powder</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos architecto voluptates nisi dolore molestias eius ut eligendi nihil nemo ipsum ad quae reiciendis vitae ipsa quaerat laboriosam, voluptatibus
+                        repellendus, qui recusandae culpa amet dicta adipisci. Atque itaque aut inventore magnam laboriosam eaque maiores omnis? Ab molestiae illo dolor modi.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="product2-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Briquette Charcoal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos architecto voluptates nisi dolore molestias eius ut eligendi nihil nemo ipsum ad quae reiciendis vitae ipsa quaerat laboriosam, voluptatibus
+                        repellendus, qui recusandae culpa amet dicta adipisci. Atque itaque aut inventore magnam laboriosam eaque maiores omnis? Ab molestiae illo dolor modi.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -216,7 +256,7 @@
           <h2>Our Teams</h2>
         </div>
         <div class="row justify-content-evenly g-0 my-5">
-          <div class="col-lg-4 team-card my-3">
+          <div class="col-md-4 team-card my-3">
             <div class="team-card-content">
               <div class="team-image">
                 <img src="gallery/team1.jpg" alt="Profile Picture" />
@@ -232,7 +272,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 team-card my-3">
+          <div class="col-md-4 team-card my-3">
             <div class="team-card-content">
               <div class="team-image">
                 <img src="gallery/team2.jpg" alt="Profile Picture" />
@@ -284,7 +324,7 @@
           <input type="hidden" name="_captcha" value="false" />
 
           <!-- Success Message -->
-          <input type="hidden" name="_next" value="rezzandre.github.io/success.html" />
+          <input type="hidden" name="_next" value="https://rezzandre.github.io/success.html" />
 
           <div class="row frm">
             <div class="col-md-6 form">

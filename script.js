@@ -32,3 +32,12 @@ navLinks.forEach((l) => {
     }
   });
 });
+
+// banner mobile fullscreen problem
+function appHeight() {
+  const doc = document.documentElement;
+  doc.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+}
+
+window.addEventListener("resize", appHeight);
+appHeight();
