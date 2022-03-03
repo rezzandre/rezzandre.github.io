@@ -20,7 +20,7 @@ h2 {
 
 .float-container {
   position: fixed;
-  z-index: 9999;
+  z-index: 100;
   width: 50px;
   height: 50px;
   right: 1rem;
@@ -58,7 +58,7 @@ h2 {
 
 .arrow-float-container {
   position: fixed;
-  z-index: 9999;
+  z-index: 100;
   width: 50px;
   height: 50px;
   right: 1rem;
@@ -283,7 +283,7 @@ h2 {
 .product-card h3 {
   margin-top: 20px;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .product-card p {
@@ -305,6 +305,19 @@ h2 {
 .modal-backdrop {
   z-index: 1;
   opacity: 0.5;
+}
+
+.modal-dialog {
+  max-width: 850px;
+  margin: 2rem auto;
+}
+
+.modal .modal-dialog .modal-content {
+  z-index: 100;
+}
+
+.modal-body span {
+  font-size: 12px;
 }
 
 /* Products End */
@@ -489,6 +502,10 @@ footer {
 
   .float-container {
     left: 1rem;
+    bottom: 4.5rem;
+  }
+  .arrow-float-container {
+    left: 1rem;
     bottom: 1rem;
   }
 
@@ -504,6 +521,10 @@ footer {
     height: calc(var(--vh, 1vh) * 100);
   }
 
+  .banner-tagline {
+    text-align: center;
+  }
+
   .banner-tagline h1 {
     font-size: 30px;
     line-height: 50px;
@@ -514,7 +535,13 @@ footer {
   }
 
   .img-banner {
-    width: 60%;
+    width: 100%;
+  }
+
+  /* Modal */
+  .modal-dialog {
+    max-width: 850px;
+    margin: 2rem auto;
   }
 
   /* Form */
@@ -524,5 +551,14 @@ footer {
 
   .contact-info {
     margin-top: 2rem;
+  }
+
+  /* Footer */
+  footer .bt-navbar {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+  footer span {
+    font-size: 10px;
   }
 }
