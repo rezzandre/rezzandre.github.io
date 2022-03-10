@@ -1,7 +1,7 @@
 // add navbar background when scrolled
 $(document).ready(function () {
   $(window).scroll(function () {
-    if (this.scrollY > 20) {
+    if (this.scrollY > 40) {
       $(".navbar").addClass("sticky");
     } else {
       $(".navbar").removeClass("sticky");
@@ -12,9 +12,9 @@ $(document).ready(function () {
       $(".arrow-float-container").removeClass("show");
     }
     if (this.scrollY > 500) {
-      $(".float-container").addClass("show");
+      $(".wa-container").addClass("show");
     } else {
-      $(".float-container").removeClass("show");
+      $(".wa-container").removeClass("show");
     }
   });
 });
@@ -38,6 +38,3 @@ function appHeight() {
   const doc = document.documentElement;
   doc.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
 }
-
-window.addEventListener("resize", appHeight);
-appHeight();
