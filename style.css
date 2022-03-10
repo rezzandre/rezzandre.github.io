@@ -2,9 +2,6 @@
   --pr-cl: #9d9d9d;
   --sc-cl: rgb(85, 82, 82);
 }
-html {
-  height: -webkit-fill-available;
-}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -522,6 +519,7 @@ footer {
   #banner {
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
+    height: -webkit-fill-available;
   }
 
   .banner-tagline {
