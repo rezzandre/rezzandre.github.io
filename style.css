@@ -121,9 +121,27 @@ h2 {
 /* Banner */
 
 #banner {
-  background: linear-gradient(160deg, var(--pr-cl), #000);
+  /* background: linear-gradient(160deg, var(--pr-cl), #000); */
+  background: url(gallery/charcoal2.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  position: relative;
+
   width: 100%;
   height: 100vh;
+}
+
+#banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .img-banner {
@@ -131,14 +149,20 @@ h2 {
   z-index: 1;
 }
 
+.banner-tagline {
+  text-align: center;
+}
+
 .banner-tagline h1 {
   color: #fff;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 5em;
+  text-shadow: 1px 1px 2px black;
 }
 
 .banner-tagline p {
-  font-style: 16px;
+  font-size: 1.7em;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -156,12 +180,15 @@ h2 {
 
 .about-content p {
   font-size: 16px;
-  text-align: justify;
+  text-align: center;
 }
 
 .card-layanan {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
   width: 100%;
-  height: 313px;
+  height: 350px;
   border-radius: 8px;
   background-color: #fff;
   padding: 40px;
@@ -212,7 +239,7 @@ h2 {
 .product-card .product-img img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -438,17 +465,11 @@ footer {
     bottom: 1rem;
   }
 
-  /* Navbar */
-  .navbar {
-    background-color: #243b4a;
-  }
-
   /* Banner */
 
   #banner {
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
-    position: relative;
   }
 
   .banner-tagline {
@@ -462,18 +483,6 @@ footer {
 
   .banner-tagline p {
     font-size: 13px;
-  }
-
-  #banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 0.5;
-    z-index: 1;
   }
 
   .img-banner {
