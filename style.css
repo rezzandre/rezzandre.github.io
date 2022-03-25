@@ -454,7 +454,7 @@ footer {
 
 /* Responsive */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* Whatsapp Float */
 
   .wa-container {
@@ -464,6 +464,11 @@ footer {
   .arrow-float-container {
     right: 1rem;
     bottom: 1rem;
+  }
+  
+  /* Nav */
+  .navbar-brand {
+    font-size: 1.25em;
   }
 
   /* Banner */
